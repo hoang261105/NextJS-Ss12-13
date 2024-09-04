@@ -13,7 +13,7 @@ export default function B2() {
     <ul>
       <b>Danh sách bài viết</b>
       {users.map((item: any) => (
-        <li>{item.name}</li>
+        <li key={item.id}>{item.name}</li>
       ))}
     </ul>
   );
