@@ -15,7 +15,7 @@ export default function B4() {
       <b>Danh sách bài viết với refresh</b>
       <ul>
         {posts.map((post: any) => (
-          <li>
+          <li key={post.id}>
             <b>{post.title}</b>
             <p>{post.body}</p>
           </li>

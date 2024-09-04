@@ -12,7 +12,7 @@ export default function B1() {
   return (
     <ul>
       {posts.map((post: any) => (
-        <li>
+        <li key={post.id}>
           <b>{post.title}</b>
           <p>{post.body}</p>
           <p>____________________________________</p>
